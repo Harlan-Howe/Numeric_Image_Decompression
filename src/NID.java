@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class NID
 {
 
-    public void main()
+    public static void main(String[] args)
     {
         int imageWidth, imageHeight;
         int n;
@@ -23,14 +23,15 @@ public class NID
         System.out.print("Enter the width and height of the image, separated by spaces: ");
         imageWidth = keyboardScanner.nextInt();
         imageHeight = keyboardScanner.nextInt();
-        System.out.println(STR."You chose a (\{imageWidth} x \{imageHeight}) image.");
+        System.out.println("You chose a (" + imageWidth + " x " + imageHeight + ") image.");
 
         System.out.print("Enter the numbers you wish to interpret. ");
 
         while (true) // loop forever. You'll want to "break" out of this loop at some point.
         {
             n = keyboardScanner.nextInt();
-            System.out.println(n); // temporary line so you can see that n is being read. Please delete or comment out when you start writing!
+            System.out.println(n); // temporary line so you can see that n is being read.
+                                    // Please delete or comment out when you start writing!
 
             //--------------------------------
             // TODO: You write this!

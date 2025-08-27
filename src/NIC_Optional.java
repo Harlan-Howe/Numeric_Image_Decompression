@@ -3,7 +3,7 @@ import java.util.Scanner;
 // Numerical Image Compression
 public class NIC_Optional
 {
-    public  void main()
+    public static void main(String[] args)
     {
         System.out.println("Note: This is the NIC_OPTIONAL program - if you meant the NID program, instead, open that window and go to <Run> menu -> Run... -> NID.");
         int imageWidth, imageHeight;
@@ -24,14 +24,14 @@ public class NIC_Optional
         System.out.print("Enter the width and height of the image, separated by spaces: ");
         imageWidth = keyboardScanner.nextInt();
         imageHeight = keyboardScanner.nextInt();
-        System.out.println(STR."You chose a (\{imageWidth} x \{imageHeight}) image.");
+        System.out.println("You chose a (" + imageWidth + " x " + imageHeight + ") image.");
 
         output = ""; // this is the variable you'll be using to accumulate the numbers, separated by spaces.
         for(currentRow =0; currentRow<imageHeight; currentRow++)
         {
-            System.out.println(STR."Enter the next line of the image, made of '\{DARK_CHARACTER}' and '\{LIGHT_CHARACTER}' characters:");
+            System.out.println("Enter the next line of the image, made of '" + DARK_CHARACTER + "' and '" + LIGHT_CHARACTER + "' characters:");
             line = keyboardScanner.nextLine();
-            System.out.println(STR."You typed: '\{line}'."); // temporary line so you can see that n is being read. Please delete or comment out when you start writing!
+            System.out.println("You typed: '" + line + "'."); // temporary line so you can see that n is being read. Please delete or comment out when you start writing!
 
             //--------------------------------
             // TODO: You write this!
